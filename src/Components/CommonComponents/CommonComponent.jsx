@@ -26,7 +26,6 @@ export const RenderSectionHeading = ({heading, description, alignCenter}) => {
         <Typography variant="body1" component="h6" align={alignCenter ? "center":"left"} className={classes.SectionDescription}>
             {description}
         </Typography>
-
         </Box>
     )
 };

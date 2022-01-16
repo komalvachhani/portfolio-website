@@ -1,7 +1,8 @@
 import React from 'react'
-import { Box, Grid, Container, Hidden } from '@material-ui/core'
+import { Box, Grid, Container, Hidden, IconButton } from '@material-ui/core'
 import { useStyles } from './BodyStyles'
 import { RenderSectionHeading } from '../CommonComponents/CommonComponent';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 //import image from "../../images/About.jpeg"
 
 export default function AboutMe() {
@@ -15,12 +16,19 @@ export default function AboutMe() {
                             <img src={process.env.PUBLIC_URL + '/About.jpeg'} alt="About Me!" className={classes.ResponsiveImage}/>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} sm={7}>
+                    <Grid item xs={12} sm={6}>
                         {RenderSectionHeading({
                             heading:"About Me!",
                             description:"Hello, my name is Komal Vachhani and I'm a first year student studying Electrical Engineering at the University of Waterloo!",
                             //alignCenter:true,
                         })}
+
+                    <Box>
+                        <IconButton color='inherit' className={classes.LinkedInLogo}>
+                            <LinkedInIcon></LinkedInIcon>
+                        </IconButton>
+                    </Box>
+
                     </Grid>
                 </Grid>
             </Container>
