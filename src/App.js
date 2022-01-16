@@ -8,7 +8,9 @@ function App() {
     {/* <h1> test test </h1> */}
     <HeaderComponent/>
     <AboutMe/>
-    {/* <Portfolio/>
+    {/* <Experience/>
+    {/* <Projects/>
+    {/* <Skills/>
     // <Contact/>
     // <Footer/> */}
     </div>

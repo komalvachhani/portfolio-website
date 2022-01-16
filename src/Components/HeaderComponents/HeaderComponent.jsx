@@ -9,8 +9,11 @@ export default function HeaderComponent() {
        <Box className={classes.HeaderWrapper}>
            <Navbar/>
            <Box className={classes.HeaderContainer}>
+               <Typography variant="h5" component="h4" className={classes.IntroTitle}>
+                   Hi, my name is...
+                </Typography>
                <Typography variant="h3" component="h4" className={classes.HeaderTitle}>
-                   Hi, my name is Komal Vachhani.
+                   Komal Vachhani.
                 </Typography>
                <Typography variant="h3" component="h4" className={classes.HeaderDescription}>
                    I'm a student.

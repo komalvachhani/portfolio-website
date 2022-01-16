@@ -7,7 +7,9 @@ export default function Navbar() {
     const classes = useStyles();
     const navlinks = [
         {label:"About",Id:"About"},
-        {label:"Portfolio",Id:"Portfolio"},
+        {label:"Experience",Id:"Experience"},
+        {label:"Projects",Id:"Projects"},
+        {label:"Skills",Id:"Skills"},
         {label:"Contact",Id:"Contact"},
     ]
     return (
@@ -17,7 +19,7 @@ export default function Navbar() {
                     {"< Komal Vachhani />"}
                 </Typography>
             
-            {/* navlinks */}
+            {/* navlinks + fully responsive navbar */}
             <Box component={Hidden} xsDown>
                 <Box>
                     {navlinks.map((item,i) => (
